@@ -1,0 +1,266 @@
+/* General Page Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f9f9;
+    color: #333;
+}
+
+/* Header */
+
+header {
+    background-color: #006d77;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 38px;
+}
+
+header p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+/* Navigation Bar */
+
+nav {
+    background-color: #003f46;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 10px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: #83c5be;
+    color: #003f46;
+    border-radius: 5px;
+}
+
+/* Tourism Banner */
+
+.banner {
+    height: 400px;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1469854523086-cc02fe5d8800");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.banner-text h2 {
+    font-size: 42px;
+    margin: 10px;
+}
+
+/* General Section Styling */
+
+section {
+    padding: 40px;
+    margin: 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: #006d77;
+    margin-bottom: 25px;
+}
+
+/* About Section */
+
+.about {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about p {
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* Destination Cards */
+
+.destination-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.destination-card {
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    border: 2px solid #83c5be;
+    border-radius: 10px;
+    text-align: center;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.destination-card h3 {
+    color: #006d77;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+    background-color: #e8f6f5;
+}
+
+/* Packages Table */
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #555;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #006d77;
+    color: white;
+}
+
+tr:hover {
+    background-color: #e8f6f5;
+}
+
+/* Gallery */
+
+.gallery {
+    min-height: 300px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery img {
+    width: 30%;
+    height: 220px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Different Image Alignments */
+
+.left-image {
+    float: left;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.right-image {
+    float: right;
+}
+
+/* Links */
+
+.links {
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.links a {
+    color: #006d77;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: #e29578;
+}
+
+/* Contact */
+
+.contact {
+    background-color: #e8f6f5;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #003f46;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    nav a {
+        display: block;
+        margin: 5px;
+    }
+
+    .banner-text h2 {
+        font-size: 30px;
+    }
+
+    .gallery img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .left-image,
+    .right-image {
+        float: none;
+    }
+
+    table {
+        width: 100%;
+    }
+}
