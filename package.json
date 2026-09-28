@@ -5,8 +5,8 @@
   "homepage": "https://RK192004.github.io/ridha-travel-agency",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite dev.html",
+    "build": "vite build && node -e \"const fs = require('fs'); fs.copyFileSync('dist/dev.html', 'dist/index.html'); fs.copyFileSync('dist/dev.html', 'index.html'); fs.cpSync('dist/assets', 'assets', {recursive: true}); fs.writeFileSync('.nojekyll', ''); fs.writeFileSync('dist/.nojekyll', '');\"",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
